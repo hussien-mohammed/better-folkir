@@ -1,0 +1,628 @@
+/* start glopel */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.conteiner {
+    width: 80%;
+    margin: auto;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/* body{
+    height: 2500px;
+} */
+.menuicon {
+    display: none;
+    float: right;
+    font-size: 30px;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#menutap {
+    display: none;
+}
+
+.logo {
+    float: left;
+    margin-top: 2%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    size: 24px;
+    line-height: 25px;
+    color: #ff305b;
+    cursor: pointer;
+}
+
+.navbar {
+    padding: 0;
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.nav {
+    width: fit-content;
+    float: right;
+}
+
+.nav li {
+    float: left;
+}
+
+.navbar .nav ul {
+    list-style-type: none;
+    background-color: transparent;
+    padding: 0px;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+
+.navbar a {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    color: white;
+    text-decoration: none;
+    margin-top: 15px;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.nav a:hover {
+    color: #ff305b;
+}
+
+/* end glopel */
+
+/* start header css */
+#header {
+    position: relative;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.719), rgba(0, 0, 0, 0.79)), url(../images/hero\ img.jpg);
+}
+
+#header .main-header {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    font-family: "Source Code Pro", monospace;
+}
+
+.main-header h1 {
+    font-weight: 700;
+    font-size: 70px;
+    color: #ff305b;
+
+}
+
+.main-header span {
+    font-weight: 600;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.main-header p {
+    font-weight: 300;
+    font-size: 24px;
+    color: #ffffff;
+    /* text Typewriter Animation from youtube */
+    border-right: 5px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+        typing 4s steps(24, end) infinite alternate,
+        cursor 2s step-end infinite alternate;
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+/* end header */
+/* start section2 */
+#sectionabout {
+    position: relative;
+    /* padding-top: 7%; */
+    padding: 100px 0 125px;
+    /* background-color: blue; */
+}
+
+.about-img img {
+    width: 100%;
+    border-radius: 7px;
+}
+
+.about-img {
+    width: 30%;
+    float: left;
+    /* background-color: aqua; */
+}
+
+.about-img .img-border {
+    border: 5px solid #555555;
+    border-radius: 8px;
+}
+
+.about-img .img-detals {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    overflow: hidden;
+}
+
+.about-img .img-detals:hover .imglaer {
+    top: 0;
+}
+
+.imglaer {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.6);
+    transition-duration: 0.5s;
+}
+
+.imglaer .layricon {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.imglaer .layricon i {
+    color: white;
+    padding: 0 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.imglaer .layricon i:hover {
+    color: #ff305b;
+}
+
+#sectionabout .about-text {
+    margin-top: 4%;
+    text-align: center;
+    width: 60%;
+    float: right;
+    /* background-color: beige; */
+    padding: 0 2%;
+}
+
+#sectionabout .about-text ul {
+    list-style-type: none;
+}
+
+#sectionabout .about-text h3 {
+    font-size: 34px;
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 13px;
+    float: left;
+}
+
+.about-text h3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 4px;
+    background: #ff305b;
+}
+
+.about-text p {
+    border-bottom: 1px dashed #999;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.about-text ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.about-text ul li {
+    width: 50%;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.about-text span {
+    color: #333;
+    font-weight: bold;
+}
+
+.download-cv-btn button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ec2403;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.download-cv-btn button:hover {
+    background-color: #d62e00;
+}
+
+.download-cv-btn i {
+    margin-left: 5px;
+}
+
+/* end */
+
+/* servic-action */
+#servic {
+    /* height: auto; */
+    padding: 100px 0 54px;
+    background-color: #F1F1F1;
+}
+
+#servic .flex {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+#servic .titel h3 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.titel h3::before {
+    left: 0;
+    margin: 0 auto;
+    right: 0;
+    content: "";
+    position: absolute;
+    border-color: #ff305b;
+    border-style: solid;
+    border-width: 1px 0;
+    bottom: 0;
+    padding: 4px 0 5px;
+    width: 70px;
+}
+
+.titel h3::after {
+    content: "";
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    background-color: #ff305b;
+    bottom: 5px;
+    height: 1px;
+    width: 160px;
+}
+
+#servic .card {
+    text-align: center;
+    flex-basis: 25%;
+}
+
+.card-inner {
+    padding: 10px;
+    /* background-color: #d62e00; */
+}
+
+.card i {
+    color: #ff305b;
+    font-size: 36px;
+    margin-bottom: 20px;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+/* end */
+.flex2 {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.protflio {
+    margin-top: 7%;
+    padding: 100px 0 54px;
+}
+
+.ourprotfolio {
+    text-align: center;
+    position: relative;
+}
+
+.ourprotfolio h2::after {
+    content: "";
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    background-color: #ff305b;
+    bottom: 5px;
+    height: 1px;
+    width: 160px;
+}
+
+.ourprotfolio h2 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 30px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.ourprotfolio h2::before {
+    left: 0;
+    margin: 0 auto;
+    right: 0;
+    content: "";
+    position: absolute;
+    border-color: #ff305b;
+    border-style: solid;
+    border-width: 1px 0;
+    bottom: 0;
+    padding: 4px 0 5px;
+    width: 70px;
+}
+
+.protflio ul {
+    list-style-type: none;
+    background-color: transparent;
+    padding-bottom: 0;
+    margin: 0px;
+    overflow: hidden;
+    position: relative;
+}
+
+.protflio a {
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 15px;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.protflio li {
+    float: left;
+}
+
+.protflio .ulpr {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 30px 0;
+    position: static;
+}
+
+.protflio li a:hover {
+    color: #ff305b;
+}
+
+.protflio .card2 img {
+    width: 100%;
+}
+
+.mar0 {
+    margin-top: 1%;
+}
+
+.protflio .card2 {
+    width: 30%;
+    float: left;
+}
+
+.protflio .card2 .card-iner-2 {
+    padding: 10px;
+    overflow: hidden;
+    /* position: relative; */
+}
+
+.img-wrap {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.img-wrap img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.img-layer {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: 0.4s ease-in-out;
+}
+
+.img-wrap:hover .img-layer {
+    top: 0;
+}
+
+/* end */
+
+/*============= start feed back =============*/
+#clent {
+    padding: 100px 0 54px;
+}
+
+#clent .titel-client h3 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.titel-client h3::before {
+    left: 0;
+    margin: 0 auto;
+    right: 0;
+    content: "";
+    position: absolute;
+    border-color: #ff305b;
+    border-style: solid;
+    border-width: 1px 0;
+    bottom: 0;
+    padding: 4px 0 5px;
+    width: 70px;
+}
+
+.titel-client h3::after {
+    content: "";
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    background-color: #ff305b;
+    bottom: 5px;
+    height: 1px;
+    width: 160px;
+}
+
+.client-items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.client-item {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 30px;
+    max-width: 700px;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+
+.client-img {
+    flex: 0 0 110px;
+    width: 110px;
+    height: 110px;
+    /* make img better as circul */
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.client-item .client-img .tringel {
+    border-top: 80px solid #ff305b;
+    border-bottom: 80px solid transparent;
+    border-right: 80px solid transparent;
+    border-left: 80px solid #ff305b;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.client-img img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.client-content h4 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.client-content span {
+    display: inline-block;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.client-content p {
+    font-size: 15px;
+    font-style: italic;
+    color: #444;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.client-stars i {
+    color: #f1c30d;
+    margin-right: 4px;
+}
+
+/*============= end feed back =============*/
+
+
+
+
+
+
+
+
+/* .protflio .card2 .card-iner-2:hover .imglaer2{
+    top: 0;
+}
+.imglaer2{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0,0,0,0.6);
+    transition-duration: 0.5s;
+}

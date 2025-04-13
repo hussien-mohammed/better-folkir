@@ -1,0 +1,60 @@
+@media  screen and (max-width:900px) {
+    #menutap:checked + .menuicon + .nav {
+        display: block;
+    }
+
+    .menuicon {
+        display: block;
+    }
+
+    /* Navbar Menu Items */
+    .nav li {
+        float: none;
+    }
+
+    .nav {
+        display: none;
+        width: 100%;
+        
+    }
+    .logo span{
+        font-size: 24px;
+    }
+    #header{
+        height: 100vh;
+        background-position: center;
+    }
+    .main-header h1{
+        font-size: 38px;
+    }
+    .main-header span{
+        font-size: 22px;
+    }
+    .main-header p{
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 22px;
+    }
+    /* secton2 */
+    .about-img .img-border{
+        border: none;
+    }
+}
+
+@media  screen and (max-width:768px) {
+    .about-img{
+        float: none;
+        width: 100%;
+        margin-bottom: 20px; /* مسافة بين الصورة والنص */
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #sectionabout .about-text{
+        float: none;
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+}
+
