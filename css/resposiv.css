@@ -45,7 +45,7 @@
     .about-img{
         float: none;
         width: 100%;
-        margin-bottom: 20px; /* مسافة بين الصورة والنص */
+        margin-bottom: 20px; 
         padding-left: 10px;
         padding-right: 10px;
     }
@@ -55,6 +55,8 @@
         padding-left: 10px;
         padding-right: 10px;
     }
-    
+    .blog-content{
+        width: 80%;
+    }
 }
 
