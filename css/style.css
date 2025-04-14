@@ -291,7 +291,7 @@ body {
 /* servic-action */
 #servic {
     /* height: auto; */
-    padding: 100px 0 54px;
+    padding: 90px 0 54px;
     background-color: #F1F1F1;
 }
 
@@ -352,8 +352,7 @@ body {
     color: #ff305b;
     font-size: 36px;
     margin-bottom: 20px;
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
+
 }
 
 /* end */
@@ -365,7 +364,7 @@ body {
 }
 
 .protflio {
-    margin-top: 7%;
+    margin-top: 1%;
     padding: 100px 0 54px;
 }
 
@@ -491,6 +490,26 @@ body {
 }
 
 /* end */
+/* ========web info ===============*/
+#info{
+    background-color: #F1F1F1;
+    padding: 25px;
+}
+.info-inner{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+.info-box i{
+    color: #ff305b;
+    font-size: 36px;
+    margin-bottom: 2px;
+
+}
+
+/* ========end web inf0======= */
 
 /*============= start feed back =============*/
 #clent {
@@ -606,7 +625,192 @@ body {
 }
 
 /*============= end feed back =============*/
+/* ===============staret blog====== */
+#our-blog{
+    padding: 90px 0 54px;
+    background-color: #F1F1F1;
+}
+.titelblog h3{
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    text-align: center;
+    position: relative;
+}
+.titelblog h3::before {
+    left: 0;
+    margin: 0 auto;
+    right: 0;
+    content: "";
+    position: absolute;
+    border-color: #ff305b;
+    border-style: solid;
+    border-width: 1px 0;
+    bottom: 0;
+    padding: 4px 0 5px;
+    width: 70px;
+}
 
+.titelblog h3::after {
+    content: "";
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    background-color: #ff305b;
+    bottom: 5px;
+    height: 1px;
+    width: 160px;
+}
+.blogtext{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.blog-content img{
+    width: 100%;
+    display: block;
+}
+.blog-content{
+    /* background-color: #d62e00; */
+    width: 33%;
+    padding: 20px;
+}
+.blog-content span {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+}
+.blog-content h4 {
+    font-size: 20px;
+    margin: 0 0 10px;
+    font-weight: 700;
+}
+.blog-content p {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 15px;
+}
+.blog-content a {
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+}
+.blog-content a i {
+    margin-left: 5px;
+}
+/* ===============end blog========= */
+/* ==========startform ==========*/
+#form{
+    padding: 90px 0 54px 
+}
+.titelform h4{
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    text-align: center;
+    position: relative
+}
+.titelform h4::before {
+    left: 0;
+    margin: 0 auto;
+    right: 0;
+    content: "";
+    position: absolute;
+    border-color: #ff305b;
+    border-style: solid;
+    border-width: 1px 0;
+    bottom: 0;
+    padding: 4px 0 5px;
+    width: 70px;
+}
+.titelform h4::after {
+    content: "";
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    background-color: #ff305b;
+    bottom: 5px;
+    height: 1px;
+    width: 160px;
+}
+.infoform{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.infoform input{
+    width: 30%;
+    padding: 10px;
+    margin: 15px;
+}
+.infoform2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.infoform2 input{
+    width: 62%;
+    margin: auto;
+    padding: 10px;
+    margin: 15px;
+}
+.infoform3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.infoform3 input{
+    width: 62%;
+    margin: auto;
+    padding: 30px;
+    margin: 15px;
+}
+.formbtn{
+    position: absolute;
+    left: 19%;
+}
+.formbtn button{
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ec2403;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+/* ============end form =========*/
+.end{
+    margin-top: 3%;
+    width: 100%;
+    text-align: center;
+    min-height: 165px;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.end .iconcentr i{
+    padding: 15px;
+    color: white;
+}
+.end .iconcentr h5{
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+}
+.end .iconcentr span{
+    font-size: 19px;
+    font-weight: 400;
+    color:#9D3157;
+}
 
 
 
